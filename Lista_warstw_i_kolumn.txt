@@ -1,0 +1,30 @@
+Warstwa: RCN_Transakcja
+Kolumny: ['gml_id', 'przestrzenNazw', 'lokalnyId', 'wersjaId', 'oznaczenieTransakcji', 'rodzajTransakcji', 'rodzajRynku', 'stronaSprzedajaca', 'stronaKupujaca', 'cenaTransakcjiBrutto']
+Liczba wierszy: 5481
+--------------------------------------------------
+Warstwa: RCN_Dokument
+Kolumny: ['gml_id', 'oznaczenieDokumentu', 'dataSporzadzeniaDokumentu', 'tworcaDokumentu']
+Liczba wierszy: 5422
+--------------------------------------------------
+Warstwa: RCN_Nieruchomosc
+Kolumny: ['gml_id', 'rodzajNieruchomosci', 'rodzajPrawaDoNieruchomosci', 'udzialWPrawieDoNieruchomosci', 'cenaNieruchomosciBrutto', 'polePowierzchniNieruchomosciGruntowej', 'polePowierzchniNieruchomosciGruntowej_uom']
+Liczba wierszy: 5580
+--------------------------------------------------
+Warstwa: RCN_Dzialka
+Kolumny: ['gml_id', 'idDzialki', 'polePowierzchniEwidencyjnej', 'polePowierzchniEwidencyjnej_uom', 'sposobUzytkowania', 'cenaDzialkiEwidencyjnejBrutto', 'geometria', 'geometry']
+Liczba wierszy: 14230
+--------------------------------------------------
+Warstwa: RCN_Budynek
+Kolumny: ['gml_id', 'idBudynku', 'rodzajBudynku', 'cenaBudynkuBrutto', 'geometria', 'geometry']
+Liczba wierszy: 17654
+--------------------------------------------------
+Warstwa: RCN_Lokal
+Kolumny: ['gml_id', 'idLokalu', 'funkcjaLokalu', 'liczbaIzb', 'nrKondygnacji', 'powUzytkowaLokalu', 'powUzytkowaLokalu_uom', 'cenaLokaluBrutto', 'dodatkoweInformacje', 'powUzytkowaPomieszczenPrzynal', 'powUzytkowaPomieszczenPrzynal_uom', 'geometry']
+Liczba wierszy: 5535
+--------------------------------------------------
+Warstwa: RCN_Adres
+Kolumny: ['gml_id', 'miejscowosc', 'ulica', 'numerPorzadkowy']
+Liczba wierszy: 6975
+--------------------------------------------------
+
+Skipped field 'przeznaczenieWMPZP' due to unsupported OGR type: 5
