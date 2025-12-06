@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  postgres_db:
+    image: postgres:16
+    container_name: analiza_cen_rcn_wroclaw_db
+    restart: always
+    environment:
+      # Mapujemy zmienne środowiskowe kontenera na te z pliku .env
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      # Używamy zmiennych do określenia hosta i portu zewnętrznego
+      # Format: "HOST:PORT_ZEWNĘTRZNY:PORT_WEWNĘTRZNY"
+      - "${DB_HOST}:${DB_PORT}:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
