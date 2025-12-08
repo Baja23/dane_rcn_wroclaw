@@ -3,3 +3,5 @@ pipab
 .env
 venv/
 __pycache__/
+db_dumping.bat
+import_db.bat
