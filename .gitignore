@@ -6,3 +6,6 @@ __pycache__/
 db_dumping.bat
 import_db.bat
 backup_2025-12-06
+db_dumping.bat
+backup_2025-12-06.sql
+db_dumping.bat

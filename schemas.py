@@ -1,24 +1,26 @@
-from ETL_script import transakcja_joined_layer, adres_layer, dzialka_layer, budynek_layer, lokal_layer, id_joined_layer
 #db tables columns lists
-db_adres_schema = ['miejscowosc', 'ulica', 'nr_porzadkowy']
+db_adres_schema = ['gml_id', 'miejscowosc', 'ulica', 'nr_porzadkowy']
 
 db_transakcja_schema = ['id_rcn', 'rodzaj_transakcji', 'rodzaj_rynku', 'strona_sprzedajaca', 'strona_kupujaca', 
                         'cena_transakcji', 'data_sporzadzenia_dokumentu', 'rodzaj_prawa_wlasnosci', 
-                        'udzial_wlasnosci_nieruchomosci', 'pole_powierzchni_gruntowej', 'cena_nieruchomosci', 'rodzaj_nieruchomosci']
-db_dzialka_schema = ['id_rcn', 'adres_id', 'pole_powierzchni_ewidencyjnej', 'cena_dzialki_ewidencyjnej', 'dodatkowe_informacje']
-db_budynek_schema = ['id_rcn', 'adres_id', 'rodzaj_budynku', 'powierzchnia_uzytkowa', 'cena_budynku', 'dodatkowe_informacje']
-db_lokal_schema = ['id_rcn', 'adres_id', 'funkcja_lokalu', 'liczba_izb', 'nr_kondygnacji', 'powierzchnia_uzytkowa_lokalu',
+                        'udzial_w_nieruchomosci', 'pole_powierzchni_gruntowej', 'cena_nieruchomosci', 'rodzaj_nieruchomosci']
+db_dzialka_schema = ['id_rcn', 'pole_powierzchni_ewidencyjnej', 'cena_dzialki_ewidencyjnej', 'dodatkowe_informacje']
+db_budynek_schema = ['id_rcn', 'rodzaj_budynku', 'powierzchnia_uzytkowa', 'cena_budynku', 'dodatkowe_informacje']
+db_lokal_schema = ['id_rcn', 'funkcja_lokalu', 'liczba_izb', 'nr_kondygnacji', 'powierzchnia_uzytkowa_lokalu',
                    'powierzchnia_uzytkowa_pomieszczen_przynal', 'cena_lokalu', 'dodatkowe_informacje']
-db_identyfikator_schema = ['gml_id', 'id_transakcji', 'id_dzialki', 'id_budynku', 'id_lokalu']
+db_identyfikator_schema = ['gml_id', 'id_transakcji', 'id_dzialki', 'id_budynku', 'id_lokalu', 'id_adresu']
 
 layers_config = {
     'adres':{
-        'source_df': adres_layer,
+        'type': 'simple',
+        'source_df': 'RCN_Adres',
         'rename': {'numerPorzadkowy': 'nr_porzadkowy'},
-        'subset': ['miejscowosc', 'ulica', 'nr_porzadkowy']
+        'subset': ['gml_id', 'miejscowosc', 'ulica', 'numerPorzadkowy'],
+        'target_schema': db_adres_schema
     },
     'transakcja': {
-        'source_df': transakcja_joined_layer,
+        'type': 'joined_3',
+        'layer_names': ['RCN_Transakcja', 'RCN_Dokument', 'RCN_Nieruchomosc'], 
         'rename': {
             'lokalnyId': 'id_rcn',
             'rodzajTransakcji': 'rodzaj_transakcji',
@@ -26,6 +28,8 @@ layers_config = {
             'stronaSprzedajaca': 'strona_sprzedajaca',
             'stronaKupujaca': 'strona_kupujaca',
             'cenaTransakcjiBrutto': 'cena_transakcji',
+            
+            # Kolumny z połączonych warstw (Dokument, Nieruchomość)
             'dataSporzadzeniaDokumentu': 'data_sporzadzenia_dokumentu',
             'rodzajPrawaDoNieruchomosci': 'rodzaj_prawa_wlasnosci',
             'udzialWPrawieDoNieruchomosci': 'udzial_w_nieruchomosci',
@@ -34,21 +38,21 @@ layers_config = {
             'rodzajNieruchomosci': 'rodzaj_nieruchomosci'
         },
         'subset': [
-            'id_rcn', 
-            'rodzaj_transakcji', 
-            'rodzaj_rynku', 
-            'strona_sprzedajaca', 
-            'strona_kupujaca', 
-            'cena_transakcji', 
-            'data_sporzadzenia_dokumentu', 
-            'rodzaj_prawa_wlasnosci', 
-            'udzial_w_nieruchomosci', 
-            'cena_nieruchomosci', 
-            'rodzaj_nieruchomosci'
-        ]
+            'lokalnyId',
+            'rodzajTransakcji',
+            'rodzajRynku',
+            'stronaSprzedajaca',
+            'stronaKupujaca',
+            'cenaTransakcjiBrutto', 
+            'dataSporzadzeniaDokumentu',
+            'rodzajPrawaDoNieruchomosci',
+            'udzialWPrawieDoNieruchomosci'
+        ],
+        'target_schema': db_transakcja_schema
     },
     'dzialka': {
-        'source_df': dzialka_layer,
+        'type': 'simple',
+        'source_df': 'RCN_Dzialka',
         'rename': {
             'idDzialki': 'id_rcn',
             'polePowierzchniEwidencyjnej': 'pole_powierzchni_ewidencyjnej',
@@ -56,14 +60,14 @@ layers_config = {
             'cenaDzialkiEwidencyjnejBrutto': 'cena_dzialki_ewidencyjnej'
         },
         'subset': [
-            'id_rcn', 
-            'adres_id', 
-            'pole_powierzchni_ewidencyjnej', 
-            'sposob_uzytkowania'
-        ]
+            'idDzialki', 
+            'polePowierzchniEwidencyjnej'
+        ],
+        'target_schema': db_dzialka_schema
     },
     'budynek': {
-        'source_df': budynek_layer,
+        'type': 'simple',
+        'source_df': 'RCN_Budynek',
         'rename': {
             'idBudynku': 'id_rcn',
             'rodzajBudynku': 'rodzaj_budynku',
@@ -71,14 +75,14 @@ layers_config = {
             'powierzchniaUzytkowaBudynku': 'powierzchnia_uzytkowa'
         },
         'subset': [
-            'id_rcn', 
-            'adres_id', 
-            'rodzaj_budynku', 
-            'powierzchnia_uzytkowa'
-        ]        
+            'idBudynku', 
+            'rodzajBudynku', 
+        ],
+        'target_schema': db_budynek_schema        
     },
     'lokal': {
-        'source_df': lokal_layer,
+        'type': 'simple',
+        'source_df': 'RCN_Lokal',
         'rename': {
             'idLokalu': 'id_rcn', 
             'funkcjaLokalu': 'funkcja_lokalu', 
@@ -90,18 +94,24 @@ layers_config = {
             'dodatkoweInformacje': 'dodatkowe_informacje'
         },
         'subset': [
-            'id_rcn', 
-            'adres_id', 
-            'funkcja_lokalu', 
-            'liczba_izb', 
-            'nr_kondygnacji', 
-            'powierzchnia_uzytkowa_lokalu'
-        ]
+            'idLokalu', 
+            'funkcjaLokalu', 
+            'liczbaIzb', 
+            'nrKondygnacji', 
+            'powUzytkowaLokalu'
+        ],
+        'target_schema': db_lokal_schema
     },
     'identyfikator': {
-        'source_df': id_joined_layer,
-        'rename': {'lokalnyId': 'id_transakcji', 'idDzialki': 'id_dzialki', 'idBudynku': 'id_budynku', 'idLokalu': 'id_lokalu'},
-        'subset': ['gml_id', 'id_transakcji']
+        'type': 'joined_4',
+        'layer_names': [], # Nie używamy layer_names w joined_4, bo czytamy XML, ale pole musi być
+        'rename': {
+            # Tutaj mapowanie nie jest potrzebne, bo w kodzie Pythona (krok 2)
+            # stworzyliśmy od razu poprawne nazwy kolumn:
+            # 'id_transakcji', 'id_dzialki', 'id_budynku', 'id_lokalu'
+        },
+        'subset': ['gml_id'],
+        'target_schema': db_identyfikator_schema
     }
 }
 
