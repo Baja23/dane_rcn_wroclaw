@@ -106,9 +106,6 @@ layers_config = {
         'type': 'joined_4',
         'layer_names': [], # Nie używamy layer_names w joined_4, bo czytamy XML, ale pole musi być
         'rename': {
-            # Tutaj mapowanie nie jest potrzebne, bo w kodzie Pythona (krok 2)
-            # stworzyliśmy od razu poprawne nazwy kolumn:
-            # 'id_transakcji', 'id_dzialki', 'id_budynku', 'id_lokalu'
         },
         'subset': ['gml_id'],
         'target_schema': db_identyfikator_schema

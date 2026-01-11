@@ -1,11 +1,11 @@
 @echo off
 :: --- KONFIGURACJA ---
 :: Wpisz tutaj nazwę swojego kontenera (sprawdź w docker ps)
-set CONTAINER_NAME=projekt-db-1
+set CONTAINER_NAME=analiza_cen_rcn_wroclaw_db
 :: Wpisz użytkownika bazy
-set DB_USER=myuser
+set DB_USER=bskladanowska
 :: Wpisz nazwę bazy danych
-set DB_NAME=mydatabase
+set DB_NAME=rcn_wroclaw
 :: --------------------
 
 :: Pobieranie aktualnej daty do nazwy pliku (Format RRRR-MM-DD)

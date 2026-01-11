@@ -1,10 +1,21 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.9">
   <diagram name="Strona-1" id="WBpJ7b25X4vl1yh7U_ee">
-    <mxGraphModel dx="1989" dy="1139" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3124" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="iQl-VcXjUJPy8Hn1e2gw-5" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Transakcje&lt;/div&gt;&lt;div&gt;&lt;table cellpadding=&quot;2&quot; cellspacing=&quot;0&quot; style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 1em; background-color: transparent; width: 212px;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;rodzaj_transakcji&lt;br&gt;rodzaj_rynku&lt;br&gt;strona_sprzedajaca&lt;br&gt;strona_kupujaca&lt;br&gt;rodzaj_prawa_wlasnosci&lt;br&gt;rodzaj_nieruchomosci&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;rodzaj_transakcji&lt;br&gt;rodzaj_rynku&lt;br&gt;strona_sprzedajaca&lt;br&gt;strona_kupujaca&lt;br&gt;cena_transakcji&lt;br&gt;data_sporzadzenia dokumentu&lt;br&gt;rodzaj_prawa_do_nieruchomosci&lt;br&gt;udzial_w_nieruchomosci&lt;br&gt;pole_powierzchni_nieruchomości_gruntowej&lt;br&gt;cena_nieruchomosci_brutto&lt;br&gt;rodzaj_nieruchomosci&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="E5YL8Ux1OIp2M8aedtAH-2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="400" />
+              <mxPoint x="30" y="400" />
+              <mxPoint x="30" y="90" />
+            </Array>
+            <mxPoint x="10" y="467.5" as="sourcePoint" />
+            <mxPoint x="-80" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iQl-VcXjUJPy8Hn1e2gw-5" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Transakcje&lt;/div&gt;&lt;div&gt;&lt;table cellpadding=&quot;2&quot; cellspacing=&quot;0&quot; style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 1em; background-color: transparent; width: 212px;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;rodzaj_transakcji&lt;br&gt;rodzaj_rynku&lt;br&gt;strona_sprzedajaca&lt;br&gt;strona_kupujaca&lt;br&gt;rodzaj_prawa_wlasnosci&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;rodzaj_transakcji&lt;br&gt;rodzaj_rynku&lt;br&gt;strona_sprzedajaca&lt;br&gt;strona_kupujaca&lt;br&gt;cena_transakcji&lt;br&gt;data_sporzadzenia dokumentu&lt;br&gt;rodzaj_prawa_do_nieruchomosci&lt;br&gt;udzial_w_nieruchomosci&lt;br&gt;pole_powierzchni_nieruchomości_gruntowej&lt;br&gt;cena_nieruchomosci_brutto&lt;br&gt;rodzaj_nieruchomosci&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="360" width="300" x="-290" y="370" as="geometry" />
         </mxCell>
         <mxCell id="XyKzH-H6Uodo1n29gOES-37" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.209;entryDx=0;entryDy=0;entryPerimeter=0;" target="iQl-VcXjUJPy8Hn1e2gw-5">
@@ -67,69 +78,39 @@
         <mxCell id="XyKzH-H6Uodo1n29gOES-23" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;strona_transakcji&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;uniqueId&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;nazwa&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
           <mxGeometry height="90" width="180" x="-690" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-49" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-26">
+        <mxCell id="E5YL8Ux1OIp2M8aedtAH-1" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="XyKzH-H6Uodo1n29gOES-29">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="40" y="858" />
-              <mxPoint x="40" y="130" />
+              <mxPoint x="-350" y="858" />
+              <mxPoint x="-350" y="320" />
+              <mxPoint x="-60" y="320" />
+              <mxPoint x="-60" y="145" />
             </Array>
+            <mxPoint x="-340" y="310" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-54" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.294;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-28">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XyKzH-H6Uodo1n29gOES-25" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;adres&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;uniqueId&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;miejscowosc&lt;br&gt;ulica&lt;br&gt;nr_porzadkowy&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
           <mxGeometry height="110" width="130" x="-270" y="830" as="geometry" />
         </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-26" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;dzialka&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;sposob_uzytkowania&lt;br&gt;adres_id&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;adres_id&lt;br&gt;pole_powierzchni&lt;br&gt;sposob_uzytkowania&lt;br&gt;cena_dzialki&lt;br&gt;dodatkowe_informacje&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+        <mxCell id="XyKzH-H6Uodo1n29gOES-26" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;dzialka&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;sposob_uzytkowania&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;pole_powierzchni&lt;br&gt;sposob_uzytkowania&lt;br&gt;cena_dzialki&lt;br&gt;dodatkowe_informacje&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
           <mxGeometry height="210" width="180" x="250" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-27" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;budynek&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;rodzaj_budynku&lt;br&gt;adres_id&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;adres_id&lt;br&gt;rodzaj_budynku&lt;br&gt;powierzchnia_uzytkowa&lt;br&gt;cena_budynku&lt;br&gt;dodatkowe_informacje&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+        <mxCell id="XyKzH-H6Uodo1n29gOES-27" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;budynek&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;rodzaj_budynku&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;rodzaj_budynku&lt;br&gt;powierzchnia_uzytkowa&lt;br&gt;cena_budynku&lt;br&gt;dodatkowe_informacje&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
           <mxGeometry height="210" width="190" x="250" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-28" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;lokal&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;adres_id&lt;br&gt;funkcja_lokalu&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;adres_id&lt;br&gt;funkcja_lokalu&lt;br&gt;liczba_izb&lt;br&gt;nr_kondygnacji&lt;br&gt;powierzchnia_uzytkowa_lokalu&lt;br&gt;powierzchnia_uzytkowa_pomieszczen_przynal&lt;br&gt;cena_lokalu&lt;br&gt;dodatkowe+informacje&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+        <mxCell id="XyKzH-H6Uodo1n29gOES-28" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;lokal&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;uniqueId&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;funkcja_lokalu&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_rcn&lt;br&gt;funkcja_lokalu&lt;br&gt;liczba_izb&lt;br&gt;nr_kondygnacji&lt;br&gt;powierzchnia_uzytkowa_lokalu&lt;br&gt;powierzchnia_uzytkowa_pomieszczen_przynal&lt;br&gt;cena_lokalu&lt;br&gt;dodatkowe+informacje&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
           <mxGeometry height="255" width="290" x="200" y="740" as="geometry" />
         </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-34" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.157;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-28">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="780" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="XyKzH-H6Uodo1n29gOES-29" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;identyfikator&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;id&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;id_transakcji&lt;br&gt;id_dzialki&lt;br&gt;id_budynku&lt;br&gt;id_lokalu&lt;br&gt;id_adresu&lt;br&gt;&lt;br&gt;gml_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_transakcji&lt;br&gt;id_dzialki&lt;br&gt;id_budynku&lt;br&gt;id_lokalu&lt;br&gt;id_adresu&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="250" width="180" x="-260" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-36" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-27">
+        <mxCell id="XyKzH-H6Uodo1n29gOES-50" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.006;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-26">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-80" y="120" />
-              <mxPoint x="85" y="120" />
-              <mxPoint x="85" y="432" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-29" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;identyfikator&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;&lt;br&gt;id&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;id_transakcji&lt;br&gt;id_dzialki&lt;br&gt;id_budynku&lt;br&gt;id_lokalu&lt;br&gt;&lt;br&gt;gml_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;id_transakcji&lt;br&gt;id_dzialki&lt;br&gt;id_budynku&lt;br&gt;id_lokalu&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
-          <mxGeometry height="230" width="180" x="-260" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-31" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.997;entryY=0.138;entryDx=0;entryDy=0;entryPerimeter=0;" target="iQl-VcXjUJPy8Hn1e2gw-5">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-80" y="90" />
-              <mxPoint x="30" y="90" />
-              <mxPoint x="30" y="417" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-32" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.205;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-26">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-80" y="110" />
-              <mxPoint x="85" y="110" />
-              <mxPoint x="85" y="83" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="XyKzH-H6Uodo1n29gOES-50" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="XyKzH-H6Uodo1n29gOES-26">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="670" y="1055" />
-              <mxPoint x="670" y="93" />
+              <mxPoint x="-490" y="955" />
+              <mxPoint x="-490" y="1020" />
+              <mxPoint x="670" y="1020" />
+              <mxPoint x="670" y="130" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -151,6 +132,27 @@
             <Array as="points">
               <mxPoint x="-110" y="815" />
               <mxPoint x="-110" y="828" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5YL8Ux1OIp2M8aedtAH-3" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.344;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E5YL8Ux1OIp2M8aedtAH-4" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.392;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="430" />
+              <mxPoint x="85" y="430" />
+              <mxPoint x="85" y="118" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E5YL8Ux1OIp2M8aedtAH-5" edge="1" parent="1" source="XyKzH-H6Uodo1n29gOES-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.436;entryDx=0;entryDy=0;entryPerimeter=0;" target="XyKzH-H6Uodo1n29gOES-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="780" />
+              <mxPoint x="60" y="780" />
+              <mxPoint x="60" y="129" />
             </Array>
           </mxGeometry>
         </mxCell>
